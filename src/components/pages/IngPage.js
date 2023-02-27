@@ -1,12 +1,8 @@
 import React from "react";
-import Login from "../layout/signup";
+import Login from "../../routes/signup";
 
 const IngPage = () => {
-  return (
-    <div>
-      <Login></Login>
-    </div>
-  );
+  return <div>Agronomist</div>;
 };
 
 export default IngPage;

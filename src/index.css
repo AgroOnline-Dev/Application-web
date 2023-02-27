@@ -268,3 +268,8 @@ ul {
   margin: 0 auto;
   margin-top: -1.5rem;
 }
+
+.center {
+  justify-content: center;
+  align-items: center;
+}

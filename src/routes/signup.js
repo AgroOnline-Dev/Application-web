@@ -1,11 +1,14 @@
-import React, { useRef, useState, useEffect } from "react";
-
+import React, { useRef } from "react";
+import { Link } from "react-router-dom";
+import axios from "axios";
+const url = "http://localhost:3001/agronome/signup";
+// import { useNavigate } from "react-router-dom";
 function Login() {
   const nameRef = useRef();
   const emailRef = useRef();
   const passwordRef = useRef();
 
-  function submitHandler(event) {
+  async function submitHandler(event) {
     event.preventDefault();
     const enteredName = nameRef.current.value;
     const enteredEmail = emailRef.current.value;
@@ -16,9 +19,19 @@ function Login() {
       enteredEmail,
       enteredPassword,
     };
-    console.log(signupData);
+    try {
+      const resp = await axios.post(url, {
+        email: enteredEmail,
+        password: enteredPassword,
+        name: enteredName,
+      });
+      console.log(resp.data);
+    } catch (error) {
+      console.log(error.response);
+    }
   }
 
+  // const navigate = useNavigate();
   return (
     <div>
       <form className="form" onSubmit={submitHandler}>
@@ -62,7 +75,10 @@ function Login() {
           ></input>
         </div>
         <button className="btn btn-block">login</button>
-        <p className="title">sign in</p>
+        <Link to="signin" className="title">
+          {" "}
+          Signin
+        </Link>
       </form>
     </div>
   );
