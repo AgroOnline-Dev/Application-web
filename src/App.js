@@ -7,6 +7,7 @@ import AccompTech from "./pages/AccompTech";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Error from "./pages/Error";
+import FicheTechnique from "./pages/FicheTechnique";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
@@ -15,8 +16,10 @@ function App() {
         <Route path="/" element={<PagePartager />}>
           <Route index element={<Accueil />} />
           <Route path="ecommerce" element={<Ecommerce />} />
-          <Route path="accomp-tech" element={<AccompTech />} />
+          <Route path="accomp-tech" element={<AccompTech />}></Route>
+          <Route path="fiche-technique" element={<FicheTechnique />} />
           <Route path="investissement" element={<Investissement />} />
+
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
           <Route path="*" element={<Error />} />

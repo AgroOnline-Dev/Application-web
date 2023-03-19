@@ -38,13 +38,18 @@ function Footer() {
           <h4>Suivez nous</h4>
           <div>
             <Link to="/">
-              <img className="social-links" id="facebook" src={facebook} />
+              <img
+                className="social-links"
+                id="facebook"
+                src={facebook}
+                alt="footer-img"
+              />
             </Link>
             <Link to="/">
-              <img className="social-links" src={whatsapp} />
+              <img className="social-links" src={whatsapp} alt="footer-img" />
             </Link>
             <Link to="/">
-              <img className="social-links" src={twitter} />
+              <img className="social-links" src={twitter} alt="footer-img" />
             </Link>
           </div>
         </div>
