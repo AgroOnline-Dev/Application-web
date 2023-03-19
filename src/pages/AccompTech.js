@@ -29,7 +29,7 @@ function AccompTech() {
             <Link
               key={item.id}
               to={{
-                pathname: "/accomp-tech/fiche-technique",
+                pathname: "/fiche-technique",
                 state: { data: item },
               }}
             >
@@ -44,7 +44,6 @@ function AccompTech() {
             </Link>
           );
         })}
-        <Outlet />
       </div>
     </>
   );
