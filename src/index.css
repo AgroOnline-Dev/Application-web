@@ -173,63 +173,65 @@ body {
 }
 
 /* footer css */
-.container {
-  max-width: 1170px;
-  margin: auto;
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-ul {
-  list-style: none;
-}
+
 .footer {
   background-color: var(--white);
-  padding: 70px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 10%;
 }
-.footer-col {
-  width: 25%;
-  padding: 0 15px;
+.footer-links {
+  list-style: none;
 }
-.footer-col h4 {
-  font: var(--unnamed-font-style-normal) normal 300 var(--unnamed-font-size-25) /
-    29px var(--unnamed-font-family-larsseit);
-  letter-spacing: var(--unnamed-character-spacing-0);
+.footer-link {
+  text-decoration: none;
   color: var(--unnamed-color-707070);
-  font: normal normal 300 25px/29px Larsseit;
-  text-transform: capitalize;
-  margin-bottom: 19px;
-}
-.footer-col ul li {
-  font: var(--unnamed-font-style-normal);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--grey-900);
-  font: normal normal medium 50px/58px Larsseit;
 }
 .logo {
-  width: 117px;
+  width: 80px;
+}
+.social-links {
+  width: 22px;
+  margin: 0 3px;
+  /* margin-top: 15px; */
+}
+#facebook {
+  width: 12px;
+}
+.footer-contact li {
+  list-style: none;
 }
 
 /* navbar css */
 
 nav {
-  background-color: var(--white);
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding-top: 40px;
-  padding-left: 10%;
-  padding-right: 10%;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: var(--white);
 }
-nav img {
+.nav-logo {
+  cursor: pointer;
+}
+.nav-logo img {
   width: 75px;
 }
-nav ul li {
-  list-style-type: none;
+.nav-links {
+  list-style: none;
+}
+.nav-links li {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 0px 15px;
 }
 .nav-link {
   text-decoration: none;
+  color: var(--unnamed-color-707070);
+}
+.nav-icons {
+  width: 35px;
+}
+.profile {
+  width: 51px;
 }
