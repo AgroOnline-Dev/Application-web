@@ -1,6 +1,5 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import Fiche from "../components/Fiche";
 
 function FicheTechnique(props) {
@@ -20,14 +19,16 @@ function FicheTechnique(props) {
     fetchData();
   }, []);
   return (
-    <div className="page-fiche">
-      {result.map((item) => {
-        return (
-          <div key={item.id}>
-            <Fiche name={item.nom} />
-          </div>
-        );
-      })}
+    <div className="home">
+      <div className="page-fiche">
+        {result.map((item) => {
+          return (
+            <div key={item.id}>
+              <Fiche name={item.nom} />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

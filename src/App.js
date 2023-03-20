@@ -8,6 +8,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Error from "./pages/Error";
 import FicheTechnique from "./pages/FicheTechnique";
+import Chat from "./pages/Chat";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="ecommerce" element={<Ecommerce />} />
           <Route path="accomp-tech" element={<AccompTech />}></Route>
           <Route path="fiche-technique" element={<FicheTechnique />} />
+          <Route path="chat" element={<Chat />} />
           <Route path="investissement" element={<Investissement />} />
 
           <Route path="login" element={<Login />} />
