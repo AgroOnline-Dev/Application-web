@@ -39,11 +39,13 @@ function Navbar() {
         <div>
           <img className="nav-icons" src={search} alt="search" />
           <img className="nav-icons" src={cart} alt="shopping cart" />
-          <img
-            className="nav-icons profile"
-            src={profileOffline}
-            alt="profile"
-          />
+          <div>
+            <img
+              className="nav-icons profile"
+              src={profileOffline}
+              alt="profile"
+            />
+          </div>
         </div>
       </nav>
     </>
