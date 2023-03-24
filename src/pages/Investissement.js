@@ -1,7 +1,7 @@
 import React from "react";
 
 function Investissement() {
-  return <div className="home">Investissement</div>;
+  return <div>Investissement</div>;
 }
 
 export default Investissement;

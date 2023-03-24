@@ -1,9 +1,10 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Fiche from "../components/Fiche";
+import { Link } from "react-router-dom";
 
 function FicheTechnique(props) {
-  const url = "http://localhost:3001/agriculturer/fiche-technique";
+  const url = "http://localhost:5000/agriculturer/fiche-technique";
   // console.log(props.location.state);
   const [result, setResult] = useState([]);
 
@@ -19,12 +20,14 @@ function FicheTechnique(props) {
     fetchData();
   }, []);
   return (
-    <div className="home">
-      <div className="page-fiche">
+    <div>
+      <div className="act">
         {result.map((item) => {
           return (
-            <div key={item.id}>
-              <Fiche name={item.nom} />
+            <div className="item" key={item.id}>
+              <Link to="/accomp-tech">
+                <Fiche name={item.nom} />
+              </Link>
             </div>
           );
         })}

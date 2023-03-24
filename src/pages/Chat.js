@@ -4,7 +4,7 @@ import Message from "../components/Message";
 import profile from "../assets/Pprofile.png";
 
 function Chat() {
-  const url = "http://localhost:3001/agriculturer/chat";
+  const url = "http://localhost:5000/agriculturer/chat";
   const [result, setResult] = useState([]);
   const fetchData = async () => {
     try {

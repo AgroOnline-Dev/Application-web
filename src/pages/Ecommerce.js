@@ -1,7 +1,7 @@
 import React from "react";
 
 function Ecommerce() {
-  return <div className="home">Ecommerce</div>;
+  return <div>Ecommerce</div>;
 }
 
 export default Ecommerce;

@@ -50,7 +50,6 @@ html {
 body {
   background: var(--grey-100) 0% 0% no-repeat padding-box;
   background: #f1f5f9 0% 0% no-repeat padding-box;
-  /* margin: auto; */
 }
 
 /* footer css */
@@ -61,7 +60,6 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 30px 10%;
-  /* position: absolute; */
   bottom: 0;
 }
 .footer-links {
@@ -91,18 +89,22 @@ body {
   width: 90vw;
   max-width: 1120px;
   margin: 0 auto;
-  min-height: calc(100vh - (6rem + 4rem));
+  min-height: calc(100vh - (9.5rem + 4rem));
 }
 
 /* navbar css */
 
 nav {
+  background-color: var(--white);
+  height: 75px;
+  text-align: center;
+}
+.nav-center {
+  margin: 0 auto;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
-  background-color: var(--white);
-  height: 75px;
 }
 .nav-logo {
   cursor: pointer;
@@ -119,28 +121,84 @@ nav {
 }
 .nav-link {
   text-decoration: none;
-  color: var(--unnamed-color-707070);
+  color: var(--grey-900);
+}
+.active {
+  color: var(--primary-400);
+  text-decoration: underline;
+  margin-top: 5px;
 }
 .nav-icons {
-  width: 35px;
+  width: 25px;
+  margin: 0 5px;
 }
 .profile {
-  width: 51px;
+  margin-top: 8px;
+  width: 40px;
+  cursor: pointer;
 }
+.nav-icons-sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown-content {
+  /* display: none; */
+  /* background-color: var(--white);
+  width: 15px; */
+  display: block;
+  position: absolute;
+  background: var(--white);
+  margin-top: 15px;
+  margin-left: -15px;
+  width: 200px;
+  height: fit-content;
+  box-shadow: 0px 3px 6px #00000029;
+}
+.dropdown-content p {
+  padding: 8px;
+  color: #4d4f5c;
+  border-bottom: 1px solid gray;
+  text-decoration: none;
+}
+.dropdown-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dropdown-icon {
+  margin-right: 5px;
+}
+.display {
+  display: flex;
+  align-items: center;
+}
+/* .display p {
+  font-size: larger;
+  margin: 0 100px;
+} */
+.name {
+  margin: 0 55px;
+  font-size: larger;
+}
+.conn {
+  width: 35px;
+  margin-left: 17px;
+}
+.sign {
+  max-width: 750px;
+}
+/*  */
+
+/* 
+
+
 
 /* accompagnement technique */
+
 .act {
-  /* min-height: 100vh; */
-  /* margin: 25px 75px;
-  text-align: center; */
-  /* min-height: 50vh; */
-  /* max-width: 1120px; */
-  /* margin: 75px auto 2rem; */
-  width: 90vw;
-  display: grid;
-  /* gap: 3rem 2rem; */
+  margin: 50px auto;
   grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
-  /* text-align: center; */
 }
 
 .card {
@@ -150,6 +208,8 @@ nav {
   justify-content: center;
   width: 350px;
   height: 165px;
+  margin: 10px;
+  padding: 25px;
 }
 .card img {
   width: 85px;
@@ -162,25 +222,6 @@ nav {
 }
 .item {
   display: inline-block;
-  margin: 10px 10px;
-}
-
-/* css page fiche technique */
-
-.page-fiche {
-  max-width: 1120px;
-  margin: 75px auto 2rem;
-  width: 90vw;
-  display: grid;
-  /* min-height: 100vh; */
-  /* gap: 3rem 2rem; */
-  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
-  /* text-align: center; */
-}
-.fiche {
-  margin: 10px;
-  width: 350px;
-  padding: 25px;
 }
 
 /* css for chat */

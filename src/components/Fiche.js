@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Fiche({ name }) {
   return (
-    <div className="card fiche">
+    <div className="card ">
       <img src="" alt="pdf" />
       <div>
         <h2>{name}</h2>
