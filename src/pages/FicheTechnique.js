@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Fiche from "../components/Fiche";
 import { Link } from "react-router-dom";
+import AgronomePageHeader from "../components/AgronomePageHeader";
 
 function FicheTechnique(props) {
   const url = "http://localhost:5000/agriculturer/fiche-technique";
@@ -21,6 +22,7 @@ function FicheTechnique(props) {
   }, []);
   return (
     <div>
+      <AgronomePageHeader />
       <div className="act">
         {result.map((item) => {
           return (
