@@ -10,7 +10,10 @@
   box-sizing: border-box;
 }
 /* fonts */
-@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+/* @import url("https://fonts.googleapis.com/css?family=Poppins:400"); */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap");
 
 html {
   font-size: 100%;
@@ -45,6 +48,7 @@ html {
   --red-light: #f8d7da;
   --white: #ffffff;
   --unnamed-color-707070: #707070;
+  --maxWidth: 1120px;
 }
 
 body {
@@ -262,11 +266,148 @@ accompagnement technique
 #other {
   margin: 10px 50px;
 }
-input {
+/* input {
   width: 750px;
 }
 button {
   border-radius: 25%;
   padding: 25px;
   margin: 0 0 0 25px;
+} */
+
+/* 
+
+header accompagnement css
+
+ */
+
+.accomptech-header-container {
+  margin-top: 50px;
+}
+.header-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-text p {
+  text-transform: uppercase;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--primary-600);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: row; */
+}
+
+.circle span {
+  /* font-size: 24px; */
+  color: white;
+  /* text-align: center; */
+}
+.round {
+  margin: 0 25px;
+}
+.lineh {
+  height: 1px;
+  width: 80%;
+  margin: 0 5px;
+  background-color: #000;
+  /* margin-bottom: 15px; */
+}
+/* 
+
+abonnement payment 
+
+
+ */
+h1 {
+  font-size: 2em;
+  margin: 5px 0;
+}
+.abonnement-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 58px;
+}
+.line {
+  border: none;
+  border-top: 1px solid black;
+}
+.lin {
+  height: 1px;
+  width: 100%;
+  background-color: #000;
+  margin-bottom: 15px;
+}
+.abonnement-box-container {
+  display: flex;
+  align-items: flex;
+  /* justify-content: center; */
+}
+.abonnement-pay-option {
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 12px;
+  /* border: solid 1px; */
+  box-shadow: 0px 3px 6px #00000029;
+}
+.abonnement-pay-option span {
+  width: 19px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+  margin: 4px;
+}
+.abonnement-pay-option img {
+  width: 50px;
+}
+.abonnement-pay-option p {
+  font-size: 10px;
+}
+.abonnement-amount {
+  background-color: var(--white);
+  /* height: max-content; */
+  text-align: center;
+  padding: 25px;
+  margin-left: 5px;
+  border-radius: 15px;
+  box-shadow: 0px 3px 6px #00000029;
+  /* border: solid 0.25px; */
+}
+#number {
+  width: 923px;
+  height: 35px;
+  border: 1px solid var(--unnamed-color-707070);
+  box-shadow: 0px 3px 6px #00000029;
+}
+.abonnement-input {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.abonnement-pay-btn {
+  margin-top: 15px;
+  margin-bottom: 50px;
+  width: 460px;
+  height: 50px;
+  border: 0;
+  background-color: var(--primary-800);
+  color: var(--white);
+  font: normal normal 600 20px/33px Montserrat;
+  cursor: pointer;
 }

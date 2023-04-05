@@ -6,7 +6,7 @@ import axios from "axios";
 import AgronomeCard from "../components/AgronomeCard";
 const url = "http://localhost:5000/agriculturer/agronomes";
 
-function AccompTech() {
+function AccompTechLanding() {
   const [info, setInfo] = useState([]);
 
   const fetchData = async () => {
@@ -29,7 +29,7 @@ function AccompTech() {
             <Link
               key={item.id}
               to={{
-                pathname: "/fiche-technique",
+                pathname: "/accompTech",
                 state: { data: item },
               }}
             >
@@ -49,4 +49,4 @@ function AccompTech() {
   );
 }
 
-export default AccompTech;
+export default AccompTechLanding;

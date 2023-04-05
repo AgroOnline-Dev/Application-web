@@ -2,12 +2,13 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import AgronomePageHeader from "../components/AgronomePageHeader";
 
-function AccompTechPages() {
+function AccompTechMainPage() {
   return (
-    <>
+    <div>
+      <AgronomePageHeader />
       <Outlet />
-    </>
+    </div>
   );
 }
 
-export default AccompTechPages;
+export default AccompTechMainPage;

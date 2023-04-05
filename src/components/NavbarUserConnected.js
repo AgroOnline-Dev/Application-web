@@ -41,7 +41,7 @@ function NavbarUserConnected() {
               </NavLink>
             </li>
             <li>
-              <NavLink className="nav-link" to="/accomp-tech-landing">
+              <NavLink className="nav-link" to="/accompTech/abonnement">
                 AccompTech
               </NavLink>
             </li>

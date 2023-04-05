@@ -3,10 +3,10 @@ import React, { useEffect, useState } from "react";
 import Fiche from "../components/Fiche";
 import { Link } from "react-router-dom";
 import AgronomePageHeader from "../components/AgronomePageHeader";
+import Chat from "../components/Chat";
 
 function FicheTechnique(props) {
   const url = "http://localhost:5000/agriculturer/fiche-technique";
-  // console.log(props.location.state);
   const [result, setResult] = useState([]);
 
   const fetchData = async () => {

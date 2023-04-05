@@ -1,8 +1,8 @@
 import logo from "../assets/Logo.png";
 import React, { useState } from "react";
 
-function NavBarSign() {
-  const [currentPage, setCurrentPage] = useState("Sign Up");
+function NavBarSign({ currentPageProps }) {
+  const [currentPage, setCurrentPage] = useState(currentPageProps);
   const handlePage = () => {
     setCurrentPage((state) => {
       if (state === "Sign Up") {

@@ -8,10 +8,7 @@ import NavBarSign from "../components/NavBarSign";
 function Accueil() {
   return (
     <>
-      {/* <NavbarUserNotConnected /> */}
       <NavbarUserConnected />
-      {/* <NavbarAgronome /> */}
-      {/* <NavBarSign /> */}
       <div className="page">
         <Outlet />
       </div>
