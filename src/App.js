@@ -1,4 +1,3 @@
-
 import Accueil from "./pages/Accueil";
 import PagePartager from "./pages/PagePartager";
 import Ecommerce from "./pages/Ecommerce";
@@ -23,10 +22,10 @@ function App() {
           <Route path="ecommerce" element={<Ecommerce />} />
           <Route path="accompTech" element={<AccompTechPages />}>
             <Route index element={<AccompTechMainPage />} />
-              <Route path="videoConference" element={<VideoConference />} />
-              <Route path="chat" element={<Chat />} />
-              <Route path="fiche-technique" element={<FicheTechnique />} />
-           
+            <Route path="videoConference" element={<VideoConference />} />
+            <Route path="chat" element={<Chat />} />
+            <Route path="fiche-technique" element={<FicheTechnique />} />
+
             <Route path="abonnement" element={<AbonnementPage />} />
             <Route path="agronomeProfiles" element={<AccompTechLanding />} />
           </Route>

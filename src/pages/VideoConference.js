@@ -5,7 +5,11 @@ function VideoConference() {
   return (
     <>
       <AgronomePageHeader />
-      <div>video</div>
+      <div className="videoConference-container">
+        <div className="videoConference-participate">
+          <p>participer a la visioconference</p>
+        </div>
+      </div>
     </>
   );
 }
