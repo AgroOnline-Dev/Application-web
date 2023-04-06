@@ -29,7 +29,7 @@ function AccompTechLanding() {
             <Link
               key={item.id}
               to={{
-                pathname: "/accompTech",
+                pathname: "/accompTech/chat",
                 state: { data: item },
               }}
             >
@@ -39,6 +39,7 @@ function AccompTechLanding() {
                   email={item.email}
                   specialty={item.specialty}
                   experience={item.experience}
+                  profile={item.profile_image}
                 />
               </div>
             </Link>

@@ -6,13 +6,14 @@ import AgronomePageHeader from "../components/AgronomePageHeader";
 import Chat from "../components/Chat";
 
 function FicheTechnique(props) {
-  const url = "http://localhost:5000/agriculturer/fiche-technique";
+  const url = "http://localhost:5000/FichesTechniques";
   const [result, setResult] = useState([]);
 
   const fetchData = async () => {
     try {
       const { data } = await axios(url);
       setResult(data);
+      console.log(data);
     } catch (error) {
       console.log(error.response);
     }
@@ -27,9 +28,11 @@ function FicheTechnique(props) {
         {result.map((item) => {
           return (
             <div className="item" key={item.id}>
-              <Link to="/accomp-tech">
-                <Fiche name={item.nom} />
-              </Link>
+              <Fiche
+                id={item.id}
+                name={item.nom}
+                description={item.description}
+              />
             </div>
           );
         })}

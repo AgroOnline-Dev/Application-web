@@ -10,13 +10,14 @@
   box-sizing: border-box;
 }
 /* fonts */
-/* @import url("https://fonts.googleapis.com/css?family=Poppins:400"); */
 
-/* @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap");
 
 html {
   font-size: 100%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 /*16px*/
@@ -210,25 +211,85 @@ accompagnement technique
   background-color: var(--white);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 350px;
   height: 165px;
-  margin: 10px;
-  padding: 25px;
+  margin: 5px 10px;
+  /* padding: 25px; */
 }
 .card img {
   width: 85px;
-  margin: 0 10px;
+  /* border-radius: 50; */
+  margin: 5px 5px;
 }
 .card h1 {
   margin-top: 0;
   margin-bottom: 5px;
   color: #aaaaaa;
+  font-size: 22px;
+}
+.card h3 {
+  color: #000;
+  font-size: 15px;
+}
+.card p {
+  font-size: 12px;
 }
 .item {
   display: inline-block;
 }
+.round-circle {
+  border-radius: 50%;
+}
+/* 
 
+
+fiche technique
+
+ */
+.fiche-container {
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 350px;
+  margin: 8px 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px #00000029;
+}
+.pdf {
+  width: 70px;
+  height: 70px;
+}
+/* .download {
+  margin-left: 15px;
+} */
+.fiche-text {
+  text-align: center;
+  /* max-width: 200px; */
+}
+.fiche-text p {
+  font-size: 9px;
+}
+.open-pdf {
+  /* margin-right: 35px; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+.open-pdf a {
+  margin-top: 5px;
+  text-decoration: none;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: var(--primary-500-main-color);
+  border-radius: 8px;
+}
 /* css for chat */
 .chat-container {
   max-width: 1120px;

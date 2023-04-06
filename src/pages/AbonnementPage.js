@@ -1,6 +1,7 @@
 import React from "react";
 import NavBarSign from "../components/NavBarSign";
-import logo from "../assets/Logo.png";
+import logoOm from "../assets/Orange_Money_logo_PNG-1.png";
+import logoMomo from "../assets/SeekPng.com_money-png-images_691715.png";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
@@ -19,11 +20,10 @@ function AbonnementPage() {
                   <h3>Orange Money</h3>
                   <p>
                     Id et amet consequat pariatur proident velit nostrud labore
-                    anim eiusmod irure aliqua. Veniam qui dolor dolore irure in
-                    reprehenderit Lorem reprehenderit magna.{" "}
+                    anim eiusmod irure aliqua. Veniam qui dolor
                   </p>
                 </div>
-                <img src={logo} alt="logo" />
+                <img src={logoOm} alt="logo" />
               </div>
               <div className="abonnement-pay-option">
                 <span />
@@ -31,11 +31,10 @@ function AbonnementPage() {
                   <h3>Mobile Money</h3>
                   <p>
                     Id et amet consequat pariatur proident velit nostrud labore
-                    anim eiusmod irure aliqua. Veniam qui dolor dolore irure in
-                    reprehenderit Lorem reprehenderit magna.{" "}
+                    anim eiusmod irure aliqua. Veniam qui dolor
                   </p>
                 </div>
-                <img src={logo} alt="logo" />
+                <img src={logoMomo} alt="logo" />
               </div>
             </div>
 
