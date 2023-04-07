@@ -13,6 +13,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AbonnementPage from "./pages/AbonnementPage";
 import AccompTechMainPage from "./pages/AccompTechMainPage";
 import VideoConference from "./pages/VideoConference";
+import ModifyProfileIng from "./pages/ModifyProfileIng";
 function App() {
   return (
     <BrowserRouter>
@@ -34,6 +35,7 @@ function App() {
         </Route>
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<Signup />} />
+        <Route path="profile" element={<ModifyProfileIng />} />
       </Routes>
     </BrowserRouter>
   );

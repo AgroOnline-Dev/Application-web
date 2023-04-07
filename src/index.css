@@ -589,3 +589,76 @@ signup css
   font-size: 15px;
   color: var(--red-dark);
 }
+
+/* profile ingenieur css */
+.profile-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0;
+  width: 100%;
+}
+.profile-box-header {
+  color: var(--primary-400);
+  margin-bottom: 3px;
+}
+.profile-small-text {
+  font-size: 10px;
+}
+.profile-col-left {
+  text-align: center;
+  width: 25%;
+}
+.profile-col-right {
+  text-align: center;
+  width: 50%;
+}
+.profile-box {
+  background-color: var(--white);
+  padding: 35px 0;
+  border-radius: 8px;
+  box-shadow: 0px 3px 6px #00000029;
+  min-height: 50vh;
+}
+.profile-img {
+  width: 45%;
+  border-radius: 50%;
+}
+.profile-form-input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+.profile-form label {
+  font-size: small;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 5px 0px;
+}
+.input-container label {
+  text-transform: capitalize;
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+.input-container input {
+  border: 1px solid #707070;
+  border-radius: 4px;
+  min-height: 28px;
+  padding: 5px;
+  font-size: small;
+  width: 200px;
+}
+.form-container {
+  text-align: start;
+}
+.form-container button {
+  margin: 15px 60px;
+  color: var(--white);
+  background-color: var(--primary-400);
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+}
