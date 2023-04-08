@@ -14,6 +14,7 @@ import AbonnementPage from "./pages/AbonnementPage";
 import AccompTechMainPage from "./pages/AccompTechMainPage";
 import VideoConference from "./pages/VideoConference";
 import ModifyProfileIng from "./pages/ModifyProfileIng";
+import AgronomeChat from "./pages/AgronomeChat";
 function App() {
   return (
     <BrowserRouter>
@@ -36,6 +37,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<Signup />} />
         <Route path="profile" element={<ModifyProfileIng />} />
+        <Route path="IngChat" element={<AgronomeChat />} />
       </Routes>
     </BrowserRouter>
   );

@@ -662,3 +662,110 @@ signup css
   padding: 12px;
   border-radius: 4px;
 }
+
+/* 
+
+chat css
+
+*/
+
+/* css for farmer card */
+.farmerCard-container {
+  background-color: var(--white);
+  box-shadow: 0px 3px 6px #00000029;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 8px;
+  border-left: 3px solid var(--primary-400);
+}
+
+.farmerCard-img {
+  width: 45px;
+  border-radius: 50%;
+}
+.farmerCard-text {
+  display: flex;
+  flex-direction: column;
+}
+.farmerCard-text h4 {
+  text-transform: capitalize;
+}
+.farmerCard-text p {
+  font-size: small;
+}
+
+/* main css */
+.ing-chat-container {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  flex-direction: column;
+  margin: 50px 0;
+}
+.ing-chat-display {
+  display: flex;
+  width: 100%;
+  background-color: var(--white);
+}
+.ing-chat-display-left {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 35px 10px 0;
+}
+
+.ing-chat-display-left input {
+  height: 75px;
+  border: none;
+  box-shadow: 0px 3px 6px #00000029;
+  padding: 25px;
+  margin-bottom: 10px;
+}
+.count {
+  margin: 0 auto;
+  font-size: small;
+  color: var(--primary-400);
+}
+.left-content p {
+  font-size: small;
+}
+.ing-chat-display-right {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 25px 45px 25px 0;
+}
+.right-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.right-header p {
+  margin-left: 15px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.ing-chat-write {
+  width: 100%;
+  margin: 25px 0;
+  border: none;
+  background: #f9fafb 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  height: 95px;
+}
+.chat-sent-btn {
+  padding: 10px;
+  background-color: var(--primary-400);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+}
+.cardComponent {
+  margin: 5px 0;
+}
+.cardComponent :hover {
+  background-color: var(--primary-100);
+}
+/*  */
