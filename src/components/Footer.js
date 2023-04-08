@@ -58,7 +58,7 @@ function Footer() {
           <ul className="footer-contact">
             <li> +237 674 458 258</li>
             <li> +237 674 458 258</li>
-            <li> agroonloneo@gmail.com</li>
+            <li> agroonlineo@gmail.com</li>
           </ul>
         </div>
       </footer>
