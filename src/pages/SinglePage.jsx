@@ -6,7 +6,7 @@ import { useParams, Link, useLocation, useNavigate } from "react-router-dom";
 
 import { useEffect, useState } from "react";
 import axios from "axios";
-
+import NavbarUserConnected from "../components/NavbarUserConnected";
 const SinglePage = () => {
   const [cocktail, setCocktail] = useState(null);
   const [product, setProduct] = useState({});
@@ -37,16 +37,18 @@ const SinglePage = () => {
   }, [productId]);
 
   const BuyAction = () => {
-    navigate(`/Payment/${productId}`);
+    navigate(`/Payment/${product.id}`);
   };
 
   return (
     <>
+      <NavbarUserConnected />
       <header id='banner'>
         <div className='banner-title'>
           <h1 className='banner-text'> Single product </h1>
         </div>
       </header>
+
       <div className='product-container'>
         <div className='image-container'>
           <img className='product-image' src={product.img} alt='' srcset='' />

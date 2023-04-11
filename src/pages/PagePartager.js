@@ -8,8 +8,8 @@ import NavBarSign from "../components/NavBarSign";
 function Accueil() {
   return (
     <>
-      <NavbarUserConnected />
-      <div className="page">
+      <NavbarUserNotConnected />
+      <div className='page'>
         <Outlet />
       </div>
       <Footer />

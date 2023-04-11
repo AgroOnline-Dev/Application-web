@@ -7,6 +7,9 @@ import { Link } from "react-router-dom";
 import search from "../agroonline/Search Icon-1.png";
 import SearchBar from "../components/SearchBar";
 import iconShopping from "../agroonline/ic-shopping-add-shrine900.png";
+import NavbarUserNotConnected from "../components/NavbarUserNotConnected";
+import Footer from "../components/Footer";
+import NavigationControl from "../components/NavigationUserConfig";
 const Home = () => {
   const [produts, setProduts] = useState([]);
   const [showSearchBar, setShowSearchBar] = useState(false);
@@ -99,6 +102,8 @@ const Home = () => {
   };
   return (
     <>
+      <NavigationControl />
+      <NavbarUserNotConnected />
       <header id='banner'>
         <div className='banner-title'>
           <h1 className='banner-text'> Products </h1>
@@ -168,6 +173,7 @@ const Home = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </>
   );
 };

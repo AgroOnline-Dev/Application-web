@@ -66,6 +66,7 @@ body {
   justify-content: space-between;
   padding: 30px 10%;
   bottom: 0;
+  border: 1px solid var(--unnamed-color-707070);
 }
 .footer-links {
   list-style: none;
@@ -100,22 +101,31 @@ body {
 /* navbar css */
 
 nav {
-  background-color: var(--white);
-  height: 75px;
+  height: 206px;
+  /* UI Properties */
+  background: var(--white) 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 6px 6px #00000029;
+  opacity: 1;
   text-align: center;
+  align-items: center;
+  padding-top: 20px;
 }
 .nav-center {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 2500px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .nav-logo {
   cursor: pointer;
+  display: flex;
+  margin-left: 25px;
 }
 .nav-logo img {
-  width: 75px;
+  width: 186px;
+  height: 179px;
 }
 .nav-links {
   list-style: none;
@@ -126,7 +136,17 @@ nav {
 }
 .nav-link {
   text-decoration: none;
-  color: var(--grey-900);
+
+  /* UI Properties */
+  font: var(--unnamed-font-style-normal) normal
+    var(--unnamed-font-weight-normal) var(--unnamed-font-family-larsseit);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-707070);
+  text-align: left;
+  font: normal normal normal Larsseit;
+  letter-spacing: 0px;
+  color: #707070;
+  opacity: 1;
 }
 .active {
   color: var(--primary-400);

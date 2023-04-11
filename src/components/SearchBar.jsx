@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Form, FormControl, ListGroup } from "react-bootstrap";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import "../Flow 1.css";
 function SearchBar() {
   const [value, setValue] = useState("");
   const [options, setOptions] = useState([]);
@@ -39,10 +40,14 @@ function SearchBar() {
 
   return (
     <Form
+      className='search-bar-form'
       style={{
-        width: "30%",
+        width: "50%",
+        height: "50%",
         margin: " 0 auto",
-        borderRadius: "30%",
+        borderRadius: "30px",
+        marginTop: "25px",
+        border: "none",
       }}
     >
       <FormControl
@@ -52,30 +57,11 @@ function SearchBar() {
         onChange={handleChange}
       />
       {options.length > 0 && (
-        <ListGroup
-          style={{
-            position: "absolute",
-            zIndex: "100",
-            width: "50%",
-            maxHeight: "200px",
-            overflowY: "auto",
-            border: "1px solid #ccc",
-            backgroundColor: "#fff",
-          }}
-        >
+        <ListGroup>
           {options.map((option) => (
-            <ListGroup.Item
-              key={option.id}
-              style={{
-                cursor: "pointer",
-                borderBottom: "1px solid #ccc",
-                textDecoration: "none",
-                listStyleType: "none",
-                width: "100%",
-              }}
-            >
+            <ListGroup.Item className='search-item' key={option.id}>
               <Link
-                style={{ textDecoration: "none", color: "black" }}
+                style={{ textDecoration: "none" }}
                 to={`/Product/${option.id}`}
                 onClick={handleLinkClick}
               >

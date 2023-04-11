@@ -4,7 +4,7 @@ import iconShopping from "../agroonline/ic-shopping-add-shrine900.png";
 import omLogo from "../agroonline/Orange_Money_logo_PNG-1.png";
 import mtnMomoLogo from "../agroonline/SeekPng.com_money-png-images_691715.png";
 import { useParams, Link, useLocation } from "react-router-dom";
-
+import NavbarUserConnected from "../components/NavbarUserConnected";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Loading from "../components/Loading";
@@ -80,6 +80,7 @@ const Payment = () => {
 
   return (
     <>
+      <NavbarUserConnected />
       <header id='banner'>
         <div className='banner-title'>
           <h1 className='banner-text'> Payment </h1>
