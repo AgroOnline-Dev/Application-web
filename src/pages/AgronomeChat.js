@@ -4,11 +4,12 @@ import DefaultPhoto from "../assets/DefaultProfil.jpg";
 import FarmerCard from "../components/FarmerCard";
 import { BsChevronDown } from "react-icons/bs";
 import Footer from "../components/Footer";
+import NavbarAgronome from "../components/NavbarAgronome";
 
 function AgronomeChat() {
   return (
     <>
-      <NavBarSign currentPageProps="Ingenieur" />
+      <NavbarAgronome />
       <div className="page">
         <div className="ing-chat-container">
           <section className="ing-chat-display">

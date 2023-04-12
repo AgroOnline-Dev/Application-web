@@ -160,16 +160,23 @@ nav {
   height: fit-content;
   box-shadow: 0px 3px 6px #00000029;
 }
+.ingDropdown {
+  margin-top: 125px;
+  margin-left: 120px;
+}
+
 .dropdown-content p {
   padding: 8px;
   color: #4d4f5c;
   border-bottom: 1px solid gray;
   text-decoration: none;
+  cursor: pointer;
 }
 .dropdown-item {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 .dropdown-icon {
   margin-right: 5px;
@@ -185,6 +192,10 @@ nav {
 .name {
   margin: 0 55px;
   font-size: larger;
+  color: #000;
+}
+.link {
+  text-decoration: none;
 }
 .conn {
   width: 35px;

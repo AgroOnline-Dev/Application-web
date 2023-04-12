@@ -3,8 +3,12 @@ import React, { useEffect, useState } from "react";
 import Message from "../components/Message";
 import profile from "../assets/Pprofile.png";
 import AgronomePageHeader from "../components/AgronomePageHeader";
+import useNavigationIng, {
+  useNavigateConnect,
+} from "../utils/useIngenieurNavigation";
 
 function Chat() {
+  useNavigateConnect();
   const url = "http://localhost:5000/agriculturer/chat";
   const [result, setResult] = useState([]);
   const fetchData = async () => {
